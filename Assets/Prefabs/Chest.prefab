@@ -121,5 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnTime: 2
   _coin: {fileID: -5590304233465008282, guid: 7bf2b27ec7040664ab0d4ddb273a92cd, type: 3}
+  _ball: {fileID: -759122981129356384, guid: b52c4c8a0b587034cbee95bb98ac84cd, type: 3}
   animator: {fileID: -6046561710015616361}
   _spawnForce: {x: 5, y: 5}
+  _coinsQuantity: 10

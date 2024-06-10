@@ -1,2 +1,5 @@
 
-public interface ICollectible { }
+public interface ICollectible
+{
+    public void Collect();
+}

@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Follower : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] protected Leader _target;
+    [SerializeField] private Vector3 _offset;
+
+    private void Update()
     {
-        
+        if (_target != null)
+            transform.position = _target.transform.position + _offset;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public virtual void SetTarget(Leader target) =>
+        _target = target;
+
+    protected virtual void SetTargetNull() =>
+        _target = null;
 }
